@@ -21,12 +21,13 @@ Qt5のOpenGLのglPointSize()を使って変更しています。
 
 ## Note
 
-`/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework`
+* `/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework`
+
 `xcode-select --install`でインストールしたSDKにはglPointSizeが定義されていました。
 
-`/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework`
-XcodeのからインストールするSDKにはglPointSizeがありませんでした。
+* `/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework`
 
+XcodeのからインストールするSDKにはglPointSizeがありませんでした。
 環境設定、OSによってビルドに失敗するかもしれません。
 
 [WasdController.qml](WasdController.qml)はQt Quick 3Dの[ソースコード](https://github.com/qt/qtquick3d/blob/5.15/src/imports/helpers/WasdController.qml)を一部改変して使用しています。

@@ -19,6 +19,10 @@ SOURCES += \
 
 RESOURCES += qml.qrc
 
+win32 {
+    LIBS += -lopengl32
+}
+
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
 

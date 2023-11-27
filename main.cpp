@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     QSurfaceFormat format;
     format.setProfile(QSurfaceFormat::CompatibilityProfile);
     format.setDepthBufferSize(24);
-    format.setVersion(4, 1);
+    format.setVersion(2, 0);
     format.setSamples(4);
     QSurfaceFormat::setDefaultFormat(format);
 
